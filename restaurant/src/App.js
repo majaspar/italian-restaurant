@@ -11,8 +11,6 @@ import AdminScreen from './screens/AdminScreen';
 import GalleryScreen from './screens/GalleryScreen';
 import ContactScreen from './screens/ContactScreen';
 import AboutScreen from './screens/AboutScreen';
-import Navbar from './Navbar'
-import PageTitle from './PageTitle'
 
 // Admin
 import AddDish from "./screens/AddDish";

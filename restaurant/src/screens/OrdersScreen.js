@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import { useDispatch, useSelector } from 'react-redux'
 import { getUserOrders } from '../actions/orderActions'
 import Error from "../Error";
 import Loading from "../Loading";
-import Success from "../Success";
 import Navbar from '../Navbar';
 import PageTitle from '../PageTitle';
 
@@ -19,7 +18,7 @@ export default function OrdersScreen() {
 
     useEffect(() => {
         dispatch(getUserOrders())
-    }, [])
+    }, [dispatch])
 
     return (
         <>
@@ -59,7 +58,7 @@ export default function OrdersScreen() {
                                     )
                                 })}
                             </ol>
-                            <p>{(order.isCollected == false && order.isDelivered == false) && <h3>Pending...</h3>}</p>
+                            <p>{(order.isCollected === false && order.isDelivered === false) && <h3>Pending...</h3>}</p>
                             <p>{order.isDelivered && <div><h3>Delivered <i className="fa-solid fa-circle-check"></i></h3>
                                 <p className="mt1">Delivery address: {order.address.street}, {order.address.postcode}, {order.address.city}. </p></div>}</p>
                             <p>{order.isCollected && <h3>Collected <i className="fa-solid fa-circle-check"></i></h3>}</p>

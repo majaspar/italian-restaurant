@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import { useDispatch, useSelector } from 'react-redux'
 import { collectOrder, deliverOrder, getAllOrders } from "../actions/orderActions";
 
@@ -18,7 +18,7 @@ export default function OrdersList() {
   const { loading, error, orders } = getOrdersState;
   useEffect(() => {
     dispatch(getAllOrders());
-  }, []);
+  }, [dispatch]);
 
 
   return (

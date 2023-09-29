@@ -339,9 +339,6 @@ html {
   flex-direction: column;
   justify-content: space-between;
   min-height: 100vh;
-  background: url('assets/19742.jpg');
-  background-size: contain;
-  background-repeat: repeat;
 }
 
 /**************************/
@@ -497,7 +494,7 @@ header {
     position: relative;
     height: 100%;
     padding-block: 30%;
-    padding-inline: 10%;
+    padding-inline: 3rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -1073,4 +1070,82 @@ footer {
 
 .OrdersScreen .fa-circle-check {
   color: green;
+}
+
+
+
+/*******************************/
+/***   galleryScreen         ***/
+/*******************************/
+
+.Gallery__img {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.Gallery__img:hover {
+  filter: opacity(0.8);
+}
+
+.Gallery {
+  padding-inline: 5%;
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+  -webkit-column-width: 50%;
+  -moz-column-width: 50%;
+  column-width: 50%;
+}
+
+@media(min-width:901px) {
+  .Gallery {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-width: 33%;
+    -moz-column-width: 33%;
+    column-width: 33%;
+  }
+
+
+}
+
+.Gallery__images {
+  transition: all 350ms ease;
+  cursor: pointer;
+}
+
+.model {
+  border: 1px solid red;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: grid;
+  place-items: center;
+  background-color: black;
+  transition: opacity 0.4s ease, visibility 0.4s ease, transform 0.5s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(0);
+  overflow: hidden;
+  z-index: 25;
+}
+
+.modal.open {
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.model img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+  display: block;
+  line-height: 0;
+  padding: 1.5rem 0 1.5rem;
+  margin: 0 auto;
 }

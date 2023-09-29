@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import PageTitle from '../PageTitle'
 import Navbar from '../Navbar'
 
@@ -11,61 +11,81 @@ import img6 from '../assets/cala-w6ftFbPCs9I-unsplash.jpg';
 import img7 from '../assets/brooke-lark--F_5g8EEHYE-unsplash.jpg';
 import img8 from '../assets/mgg-vitchakorn-DDn9I5V1ubE-unsplash.jpg';
 import img9 from '../assets/orkun-orcan-w0GyGNyGo6Y-unsplash.jpg';
-import img10 from '../assets/orkun-orcan-w0GyGNyGo6Y-unsplash.jpg';
+import img10 from '../assets/01.jpg';
 
 export default function GalleryScreen() {
 
     let data = [
         {
             id: 1,
-            imgScr: img1
+            imgSrc: img1
         },
         {
             id: 2,
-            imgScr: img2
+            imgSrc: img2
         },
         {
             id: 3,
-            imgScr: img3
+            imgSrc: img3
         },
         {
             id: 4,
-            imgScr: img4
+            imgSrc: img4
         },
         {
             id: 5,
-            imgScr: img5
+            imgSrc: img5
         },
         {
             id: 6,
-            imgScr: img6
+            imgSrc: img6
         },
         {
             id: 7,
-            imgScr: img7
+            imgSrc: img7
         },
         {
             id: 8,
-            imgScr: img8
+            imgSrc: img8
         },
         {
             id: 9,
-            imgScr: img9
+            imgSrc: img9
         },
         {
             id: 10,
-            imgScr: img10
+            imgSrc: img10
         },
     ]
+
+    const [model, setModel] = useState(false);
+    const [tempImg, setTempImg] = useState('');
+
+
+    const getImage = (imgSrc) => {
+        setTempImg(imgSrc);
+        setModel(true);
+    }
     return (
         <>
             <div className="header-and-hero GalleryScreen">
                 <Navbar />
                 <PageTitle content="Gallery" />
             </div>
+            <div className={model ? "model open" : "model"}>
+                <img src={tempImg} />
+            </div>
+            <div className="Gallery mt1">
 
-            <div className="margins">Photos</div>
-            {console.warn(data)}
+                {data.map((item, index) => {
+                    return (
+                        <div className="Gallery__images" key={index} onClick={() => getImage(item.imgSrc)}>
+                            <img className="Gallery__img" src={item.imgSrc} />
+                        </div>
+                    )
+                })}
+            </div>
+
         </>
     )
 }

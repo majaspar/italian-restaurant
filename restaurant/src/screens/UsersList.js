@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { getAllOrders } from "../actions/orderActions";
+// import { getAllOrders } from "../actions/orderActions";
 import { deleteUser, getAllUsers } from '../actions/userActions'
 
 import Error from "../Error";
@@ -22,7 +22,7 @@ export default function UsersList() {
 
         dispatch(getAllUsers())
 
-    }, [])
+    }, [dispatch])
 
     return (
         <>
