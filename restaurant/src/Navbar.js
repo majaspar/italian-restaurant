@@ -36,16 +36,26 @@ export default function Navbar() {
 
   window.addEventListener('scroll', changeNavbar)
 
+
+  //open navigation on small screens
+  const openNav = () => {
+    document.getElementById('nav').style.transform = "translateX(0)"
+  }
+
+  const closeNav = () => {
+    document.getElementById('nav').style.transform = "translateX(100%)"
+  }
   return (
     <header className={navBg ? 'header header__navOnScroll' : 'headeer'}>
 
       <div className="header__wrapper flex margins">
         <div className="header__logo"> Italian <i className="fa-solid fa-utensils"></i> Restaurant</div>
+        <button id="openIcon" className="header__open--nav" onClick={openNav}><i className="fa-solid fa-bars"></i></button>
         <button className="sr-only"> Menu</button>
-        <nav className="nav flex">
+        <nav id="nav" className="nav flex">
 
           <ul className="nav__list">
-            <div className="nav__list--closeX grid"><i class="fa-solid fa-x"></i></div>
+            <div className="nav__list--closeX grid" onClick={closeNav}><i className="fa-solid fa-x"></i></div>
             <li className="nav__list--item content__item HomeLink"><a className="link link--dia" href="/">Home</a></li>
             <li className="nav__list--item content__item MenuLink"><a className="link link--dia" href="/menu">Menu</a></li>
             <li className="nav__list--item content__item GalleryLink"><a className="link link--dia" href="/gallery">Gallery</a></li>

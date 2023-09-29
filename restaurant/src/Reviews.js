@@ -13,11 +13,11 @@ export default function Reviews() {
             <div>
               <h3 className="reviews__name">Steve Rogers</h3>
               <div className="reviews__rating">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i></div>
+                <i className="fa-solid fa-star"></i>
+                <i className="fa-solid fa-star"></i>
+                <i className="fa-solid fa-star"></i>
+                <i className="fa-solid fa-star"></i>
+                <i className="fa-solid fa-star"></i></div>
             </div>
             <img className="reviews__img shadow-dark" src={placeholder} alt="" />
           </div>
@@ -28,11 +28,11 @@ export default function Reviews() {
             <div>
               <h3 className="reviews__name">Nikki Chapman</h3>
               <div className="reviews__rating">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i></div>
+                <i className="fa-solid fa-star"></i>
+                <i className="fa-solid fa-star"></i>
+                <i className="fa-solid fa-star"></i>
+                <i className="fa-solid fa-star"></i>
+                <i className="fa-solid fa-star"></i></div>
             </div>
             <img className="reviews__img shadow-dark" src={placeholder} alt="" />
           </div>
@@ -43,11 +43,11 @@ export default function Reviews() {
             <div>
               <h3 className="reviews__name">Millie Bennet</h3>
               <div className="reviews__rating">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i></div>
+                <i className="fa-solid fa-star"></i>
+                <i className="fa-solid fa-star"></i>
+                <i className="fa-solid fa-star"></i>
+                <i className="fa-solid fa-star"></i>
+                <i className="fa-solid fa-star"></i></div>
             </div>
             <img className="reviews__img shadow-dark" src={placeholder} alt="" />
           </div>

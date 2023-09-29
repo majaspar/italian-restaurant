@@ -339,6 +339,9 @@ html {
   flex-direction: column;
   justify-content: space-between;
   min-height: 100vh;
+  background: url('assets/19742.jpg');
+  background-size: contain;
+  background-repeat: repeat;
 }
 
 /**************************/
@@ -370,8 +373,10 @@ header {
 }
 
 .header__wrapper {
+  gap: 0.5rem;
   position: relative;
   padding-block: 1rem;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -472,7 +477,13 @@ header {
 /**************************/
 
 @media (max-width: 900px) {
+  .header__open--nav {
+    display: block;
+    max-height: 2.5rem;
+  }
+
   .nav {
+    transform: translateX(100%);
     position: absolute;
     background: var(--clr-dark);
     top: -1%;
@@ -530,6 +541,10 @@ header {
   }
 
   .nav__list--social {
+    display: none;
+  }
+
+  .header__open--nav {
     display: none;
   }
 }
@@ -704,7 +719,7 @@ header {
 }
 
 .menu__grid--item:hover {
-  background-color: var(--clr-blanchedalmond);
+  background-color: var(--clr-table-border-gray);
 }
 
 .menu__icon {

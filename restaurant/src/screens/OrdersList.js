@@ -62,9 +62,9 @@ export default function OrdersList() {
                         {(!order.isCollected && !order.isDelivered) && <div className="OrdersList__status flex"><button className="btn OrdersList__collected" onClick={() => { dispatch(collectOrder(order._id)) }}>Mark as Collected</button><button className="btn OrdersList__delivered" onClick={() => { dispatch(deliverOrder(order._id)) }}>Mark as Delivered</button></div>}
 
 
-                        {order.isCollected && <span className="">Collected <i class="fa-solid fa-circle-check"></i></span>}
+                        {order.isCollected && <span className="">Collected <i className="fa-solid fa-circle-check"></i></span>}
 
-                        {order.isDelivered && <span className="">Delivered <i class="fa-solid fa-circle-check"></i></span>}
+                        {order.isDelivered && <span className="">Delivered <i className="fa-solid fa-circle-check"></i></span>}
 
                       </td>
                     </tr>
