@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import PageTitle from '../PageTitle'
-import Navbar from '../Navbar'
+import Navbar from '../Navbar';
+import CloseIcon from '@mui/icons-material/Close';
+
 
 import img1 from '../assets/jay-wennington-N_Y88TWmGwA-unsplash.jpg';
 import img2 from '../assets/photo-1502301103665-0b95cc738daf.avif';
@@ -59,11 +61,11 @@ export default function GalleryScreen() {
     ]
 
     const [model, setModel] = useState(false);
-    const [tempImg, setTempImg] = useState('');
+    const [tempImgSrc, setTempImgSrc] = useState('');
 
 
     const getImage = (imgSrc) => {
-        setTempImg(imgSrc);
+        setTempImgSrc(imgSrc);
         setModel(true);
     }
     return (
@@ -73,7 +75,8 @@ export default function GalleryScreen() {
                 <PageTitle content="Gallery" />
             </div>
             <div className={model ? "model open" : "model"}>
-                <img src={tempImg} />
+                <img src={tempImgSrc} />
+                <CloseIcon onClick={() => setModel(false)} />
             </div>
             <div className="Gallery mt1">
 
