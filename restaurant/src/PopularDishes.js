@@ -5,7 +5,7 @@ import dish1 from './assets/danijela-prijovic-qits91IZv1o-unsplash1.jpg'
 
 export default function PopularDishes() {
   return (
-    <section className="mt4 popular-dishes margins mb7">
+    <section className="popular-dishes margins mb7">
       <h2 className="popular-dishes__title section-title center">Most popular</h2>
       <p className="popular-dishes__desc center mb4">See what our customers like the most.</p>
       <div className="popular-dishes__grid grid">

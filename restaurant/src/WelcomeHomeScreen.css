@@ -1,0 +1,24 @@
+.WelcomeHomeScreen__img {
+    position: relative;
+    border: 1px solid red;
+    width: 60%;
+}
+
+.WelcomeHomeScreen__img-1 {
+    width: 55%;
+}
+
+.WelcomeHomeScreen__img-2 {
+    position: absolute;
+    width: 55%;
+    bottom: -20%;
+    right: 0;
+    border: 10px solid var(--clr-white);
+}
+
+.WelcomeHomeScreen__text {
+    display: grid;
+    place-items: center;
+    border: 1px solid red;
+    width: 40%;
+}

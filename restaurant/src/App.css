@@ -241,13 +241,7 @@ html {
 .margins {
   margin-left: auto;
   margin-right: auto;
-  width: 60%;
-}
-
-@media (max-width: 95rem) {
-  .margins {
-    width: 80%;
-  }
+  width: 80%;
 }
 
 @media (max-width: 70rem) {
@@ -362,6 +356,9 @@ header {
   background-size: cover;
 }
 
+.header-and-hero.HomeScreen {
+  height: 100vh;
+}
 
 .header__navOnScroll {
   background-color: var(--clr-dark);
@@ -582,6 +579,11 @@ header {
 /**************************/
 /***     HERO           ***/
 /**************************/
+
+.HomeScreen .hero {
+  place-items: center;
+  height: 100%;
+}
 
 .hero {
   color: white;
