@@ -1,8 +1,11 @@
+
+import vector1 from './assets/vector1.svg';
+
 export default function Navbar() {
     return (
-        <section className="place-order mb7">
+        <section className="place-order">
             <div className="place-order__wrapper margins">
-                <h2 className="section-title center">
+                <h2 className="section-title center placeOrderAnimation">
 
                     Your Italian Dinner Is Only 3 Steps Away...</h2>
 

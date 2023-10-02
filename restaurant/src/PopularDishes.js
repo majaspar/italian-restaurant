@@ -1,41 +1,36 @@
-import dish from './assets/danijela-prijovic-qits91IZv1o-unsplash.png'
+import PopularDishItem from './PopularDishItem'
+
+import dish3 from './assets/carissa-gan-KSXvrqKUxnc-unsplash1.jpg'
 import pizza from './assets/photo-1594007654729-407eedc4be65.jpg'
 import dish1 from './assets/danijela-prijovic-qits91IZv1o-unsplash1.jpg'
+import dish2 from './assets/01.jpg'
+
+import vector1 from './assets/vector1.svg';
 
 
 export default function PopularDishes() {
   return (
     <section className="popular-dishes margins mt5 mb7">
+      <img className="popular-dishes--vector" src={vector1} />
       <h2 className="popular-dishes__title section-title center">Most popular</h2>
-      <p className="text-desc center mb4">See what our customers like the most.</p>
+      <p className="text-desc center mb4">See what our customers love the most.</p>
       <div className="popular-dishes__grid grid">
-
-        <div className="popular-dishes__grid--item flex-column">
-          <img className="popular-dishes__img" src={dish} alt="" />
-          <h3 className="popular-dishes__name center">Spaghetti Arrabbiata</h3>
-          <div className="popular-dishes__description center">Our tomato sauce with garlic, olive oil and chilli (optional)</div>
-          <button className="popular-dishes__btn btn-action mt1">Add to order</button>
-        </div>
-        <div className="popular-dishes__grid--item flex-column">
-          <img className="popular-dishes__img" src={pizza} alt="" />
-          <h3 className="popular-dishes__name center">Pizza Piccante</h3>
-          <div className="popular-dishes__description center">Tomato sauce, mozzarella, Nduja and pepperoni chilli.</div>
-          <button className="popular-dishes__btn btn-action mt1">Add to order</button>
-        </div>
-        <div className="popular-dishes__grid--item flex-column">
-          <img className="popular-dishes__img" src={dish1} alt="" />
-          <h3 className="popular-dishes__name center">Dish Name</h3>
-          <div className="popular-dishes__description center">
-            Deserunt necessitatibus alias magni adipisci delectus, quibusdam, similique culpa laboriosam?</div>
-          <button className="popular-dishes__btn btn-action mt1">Add to order</button>
-        </div>
-        <div className="popular-dishes__grid--item flex-column">
-          <img className="popular-dishes__img" src="https://themewant.com/products/html/dinenos/assets/images/shop/01.jpg" alt="" />
-          <h3 className="popular-dishes__name center">Sirloin Steak</h3>
-          <div className="popular-dishes__description center">Deserunt necessitatibus alias magni adipisci delectus,
-            quibusdam, similique culpa laboriosam.</div>
-          <button className="popular-dishes__btn btn-action mt1">Add to order</button>
-        </div>
+        <PopularDishItem
+          imgSource={dish3}
+          dishTitle="Spaghetti Arrabbiata"
+          dishDesc="Our tomato sauce with garlic, olive oil and chilli (optional)" />
+        <PopularDishItem
+          imgSource={pizza}
+          dishTitle="Pizza Piccante"
+          dishDesc="Tomato sauce, mozzarella, Nduja and pepperoni chilli." />
+        <PopularDishItem
+          imgSource={dish1}
+          dishTitle="Spaghetti Gamberoni"
+          dishDesc="King prawns sauteed with white wine, chilli, garlic, fresh basil and tomato sauce" />
+        <PopularDishItem
+          imgSource={dish2}
+          dishTitle="Fillet Steak"
+          dishDesc="8oz+ hand cut fillet seasoned and cooked to your taste, served with chips and salad." />
 
       </div>
     </section>

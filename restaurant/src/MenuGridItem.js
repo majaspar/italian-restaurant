@@ -32,7 +32,7 @@ export default function MenuGridItem({ dish }) {
                 </h3>
                 <p className="menu__dish--description">{dish.description}</p>
             </div>
-            <div>Qty:
+            <div className="qty-span">Qty:
                 <i onClick={deductQty}
                     style={{ marginLeft: "1rem", color: "red" }}
                     className="menu__icon fa-solid fa-circle-minus"></i>

@@ -33,9 +33,9 @@ export default function Homescreen() {
             </div>
             <Welcome />
             <PopularDishes />
-            <PlaceOrderProcess />
             <About />
             <Reviews />
+            <PlaceOrderProcess />
         </>
     )
 }

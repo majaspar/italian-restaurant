@@ -15,8 +15,8 @@ export default function Welcome() {
             <div className="Welcome__wrapper flex">
                 <div className="Welcome__imgs">
                     <img className="Welcome__vector-1" src={vector1} />
-                    <img className="Welcome__img-1" src={img1} />
-                    <img className="Welcome__img-2" src={img2} />
+                    <img className="Welcome__img-1 shadow-dark" src={img1} />
+                    <img className="Welcome__img-2 shadow" src={img2} />
                 </div>
                 <div className="Welcome__text center">
 

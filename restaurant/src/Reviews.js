@@ -4,11 +4,11 @@ import placeholder from './assets/testimonial-photo.jpg'
 export default function Reviews() {
   return (
     <section className="reviews margins mb7">
-      <h2 className="section-title center">Read Our Reviews</h2>
+      <h2 className="section-title center mb5">Read Our Reviews</h2>
 
       <div className="reviews__grid grid">
 
-        <div className="reviews__grid--item">
+        <div className="reviews__grid--item shadow">
           <div className="reviews__name-wrapper flex mb1">
             <div>
               <h3 className="reviews__name">Steve Rogers</h3>

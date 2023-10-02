@@ -72,6 +72,7 @@
 }
 
 .Welcome__text--wrapper p {
+    padding-inline: 2rem;
     backdrop-filter: blur(1px);
 }
 
