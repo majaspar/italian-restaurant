@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from '../Navbar';
-import WelcomeHomeScreen from '../WelcomeHomeScreen';
+import Welcome from '../Welcome';
 import PopularDishes from '../PopularDishes';
 import PlaceOrderProcess from '../PlaceOrderProcess';
 import About from '../About';
@@ -31,7 +31,7 @@ export default function Homescreen() {
                 </div>
 
             </div>
-            <WelcomeHomeScreen />
+            <Welcome />
             <PopularDishes />
             <PlaceOrderProcess />
             <About />

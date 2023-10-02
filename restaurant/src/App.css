@@ -9,9 +9,9 @@
 :root {
   /* colors */
 
-  --clr-accent: rgb(255, 196, 0);
+  --clr-accent: #ffc400;
   --clr-accent-hover: rgb(255, 159, 50);
-  --clr-accent-red: rgb(192, 78, 78);
+  --clr-accent-red: #c04e4e;
   --clr-accent-red-hover: rgb(238, 109, 109);
   --clr-accent-active: rgb(230, 168, 0);
   --clr-blanchedalmond: rgb(238, 109, 109);
@@ -261,6 +261,7 @@ html {
   color: var(--clr-accent)
 }
 
+
 /**************************/
 /***   Selectors   ***/
 /**************************/
@@ -323,6 +324,21 @@ html {
   margin-bottom: 3rem;
   font-family: 'Kaushan Script', cursive;
   font-size: 2rem;
+}
+
+.text-desc {
+  font-size: 1.1rem;
+  color: var(--clr-dark);
+}
+
+@media(min-width: 601px) {
+  .section-title {
+    font-size: 3rem;
+  }
+
+  .text-desc {
+    font-size: 1.3rem;
+  }
 }
 
 /*********************************************/
@@ -769,10 +785,6 @@ header {
   width: 100%;
 }
 
-.popular-dishes__desc {
-  font-size: 1.3rem;
-  color: var(--clr-text-gray);
-}
 
 /**************************/
 /***   About           ***/
