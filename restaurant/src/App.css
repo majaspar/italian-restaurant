@@ -8,11 +8,12 @@
 
 :root {
   /* colors */
-
+  --linear-red: linear-gradient(var(--clr-accent-red-hover), var(--clr-accent-red));
+  --linear-dark: linear-gradient(rgb(100, 95, 95), var(--clr-dark));
   --clr-accent: #ffc400;
-  --clr-accent-hover: rgb(238, 109, 109);
+  --clr-accent-hover: #ffcd62;
   --clr-accent-red: #c04e4e;
-  --clr-accent-red-hover: rgb(238, 109, 109);
+  --clr-accent-red-hover: #fd8989;
   --clr-accent-active: rgb(230, 168, 0);
   --clr-blanchedalmond: rgb(238, 109, 109);
   --clr-text-gray: rgb(129, 129, 129);
@@ -222,7 +223,7 @@ html {
 }
 
 .shadow-dark {
-  box-shadow: 0px 0px 10px 0px rgba(53, 53, 53, 0.58) !important;
+  box-shadow: 3px 3px 15px 0px rgba(53, 53, 53, 0.58) !important;
 }
 
 .flex-row-reverse {
@@ -1070,12 +1071,13 @@ header {
   border-top-right-radius: 70px;
   border-bottom-left-radius: 70px;
   padding: 2rem 2.5rem;
-  background: linear-gradient(#fd8989, var(--clr-accent-red));
+  background: var(--linear-red);
+  transition: all 0.5s;
+  border: 2px solid var(--clr-accent-red-hover);
 }
 
 .reviews__grid--item:hover {
-  color: var(--clr-dark);
-  background-color: var(--clr-accent);
+  border: 2px solid yellow;
   border-top-right-radius: 0;
   border-bottom-left-radius: 0;
   border-top-left-radius: 70px;
@@ -1083,6 +1085,7 @@ header {
 }
 
 .reviews__img {
+  border: 4px solid white;
   width: 120px;
   border-radius: 50%;
 }
@@ -1190,23 +1193,22 @@ header {
 footer {
   color: white;
   margin-top: 5rem;
-  background-color: var(--clr-dark);
+  background: var(--linear-dark);
   padding-block: 2rem;
 }
 
 .footer__wrapper {
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
-  flex-wrap: wrap;
 }
 
 .footer__column {
   row-gap: 0.3rem;
-  width: min(30%, 350px);
 }
 
 .footer__social--icons {
-  gap: 2rem;
+  gap: 1rem;
   font-size: 1.5rem;
 }
 

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useSelector, useDispatch } from "react-redux"
+import { useSelector, useDispatch } from "react-redux";
 import { logoutUser } from "./actions/userActions";
 import SocialMediaIcons from './SocialMediaIcons';
 import './Navbar.css'
@@ -10,6 +10,7 @@ export default function Navbar() {
   const userState = useSelector(state => state.loginUserReducer)
   const { currentUser } = userState;
   const dispatch = useDispatch();
+
 
   //dropdown menu when logged in
   const dropDown = () => {
@@ -23,6 +24,7 @@ export default function Navbar() {
       arrow.style.transform = "rotate(0deg)"
     }
   }
+
 
   //change navbar bg color when scrolling
   const [navBg, setNavBg] = useState(false)
