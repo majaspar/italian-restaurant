@@ -302,18 +302,20 @@ ul {
 button {
   max-width: 200px;
   padding: 0.5rem 1rem;
-  background-color: var(--clr-accent);
+  background: linear-gradient(#ffe695, var(--clr-accent));
   border-radius: 8px;
   cursor: pointer;
+  box-shadow: 10px 15px 35px -24px rgba(0, 0, 0, 0.75);
 }
 
 button:hover {
-  background-color: var(--clr-accent-hover);
-  color: white;
+  background: linear-gradient(var(--clr-accent), #ffe695);
+
 }
 
 button:active {
   background-color: var(--clr-accent-active);
+  box-shadow: inset 10px 15px 30px -23px rgba(245, 120, 120, 0.75);
 }
 
 html {
@@ -802,7 +804,7 @@ header {
 }
 
 .popular-dishes__grid--item {
-
+  background: var(--clr-white);
   border: 8px solid white;
   height: 100%;
   align-items: center;
@@ -824,7 +826,6 @@ header {
 
 
 .popular-dishes__text--wrapper {
-  background: var(--clr-white);
   padding: 1rem;
   height: min(50%, 240px);
   width: 100%;
@@ -839,7 +840,7 @@ header {
 }
 
 .popular-dishes__name {
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 
 .popular-dishes--vector {
@@ -854,7 +855,6 @@ header {
 /***   About           ***/
 /**************************/
 .about__wrapper {
-  border: 1px solid red;
   position: relative;
   width: 100%;
 }
@@ -879,7 +879,7 @@ header {
   border-block: 25px solid white;
   border-left: 25px solid white;
   width: 50%;
-  height: max(80%, 500px)
+  height: max(80%, 550px)
 }
 
 .about__text {
@@ -898,6 +898,11 @@ header {
   z-index: 6;
 }
 
+.about__title {
+  position: relative;
+  z-index: 6;
+}
+
 .pastaIcon {
   position: absolute;
   z-index: 5;
@@ -910,27 +915,37 @@ header {
 
 @media (max-width: 900px) {
 
+
+
   .about__img {
     width: 100%;
     position: relative;
     z-index: 1;
   }
 
+  .about__img--img {
+    height: 70%;
+  }
+
   .about__text--wrapper {
-    bottom: -100%;
+    height: auto;
+    top: 55%;
     right: 5%;
     z-index: 5;
     border: 25px solid white;
-    width: 80%;
+    width: 90%;
   }
 
   .about__text {
     border-right: 2px solid var(--clr-accent-red);
-
+    padding: 0.5rem;
   }
 
   .pastaIcon {
+    width: 150px;
+    bottom: 58%;
     right: 5%;
+    z-index: 1;
   }
 }
 
@@ -1023,21 +1038,39 @@ header {
 /**************************/
 /***   Reviews           ***/
 /**************************/
+@media(max-width: 500px) {
+  .reviews h2 {
+    margin-top: 30%;
+  }
 
+}
+
+.reviews {
+  position: relative;
+}
+
+.Reviews__vector-1 {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  width: 120%;
+}
 
 .reviews__grid {
   color: white;
   gap: 2rem;
   width: 100%;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
 }
+
 
 .reviews__grid--item {
   position: relative;
   border-top-right-radius: 70px;
   border-bottom-left-radius: 70px;
-  padding: 2rem;
-  background-color: var(--clr-blanchedalmond);
+  padding: 2rem 2.5rem;
+  background: linear-gradient(#fd8989, var(--clr-accent-red));
 }
 
 .reviews__grid--item:hover {
@@ -1050,8 +1083,18 @@ header {
 }
 
 .reviews__img {
-  width: 100px;
-  border-radius: 50px;
+  width: 120px;
+  border-radius: 50%;
+}
+
+.reviews__name {
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+.reviews__text {
+  color: white;
+  width: 90%;
 }
 
 .reviews__name-wrapper {
@@ -1066,6 +1109,16 @@ header {
 
 .reviews .fa-star {
   color: yellow;
+}
+
+@media(min-width: 1001px) {
+  .reviews__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .reviews__img {
+    width: 100px;
+  }
 }
 
 /**************************/
