@@ -22,7 +22,7 @@ export default function Address() {
                     <p className="mt2 mb2 center"><i class="fa-solid fa-diamond"></i>
                         <i class="fa-solid fa-diamond"></i>
                         <i class="fa-solid fa-diamond"></i></p>
-                    <div className="mb2" style={{ marginLeft: "25%" }}><SocialMediaIcons /></div>
+                    <div className="mb2" style={{ marginInline: "25%" }}><SocialMediaIcons /></div>
                 </div>
                 <div className="Address__img shadow-dark" >
                     <img src={inside} />

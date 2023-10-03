@@ -22,7 +22,7 @@ export default function CartScreen() {
                 <Navbar />
                 <PageTitle content="Checkout" />
             </div>
-            <div className="margins">
+            <div className="margins mb7">
                 <h1 className="mb3 mt2">Basket Items ({cartItems.length})</h1>
 
                 <div className="basket__grid flex-column">

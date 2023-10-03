@@ -9,7 +9,7 @@ export default function ContactScreen() {
                 <Navbar />
                 <PageTitle content="Contact Us" />
             </div>
-            <div className="margins">Contact information</div>
+            <div className="margins mt7 mb7">Contact information</div>
         </>
     )
 }

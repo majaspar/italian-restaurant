@@ -19,12 +19,12 @@ export default function Homescreen() {
                         <h1 className="center">Your Perfect Italian</h1>
                         <div className="mb7 center">
                             <p className="hero__desc mt2 mb2">The most delicious flavours that Italian Cuisine has to offer!<br />
-                                Have a glass of splendid Sicilian wine and feel like you're there.<br />
+                                Have a glass of splendid Sicilian wine and feel like you're in South of Italy.<br />
                                 Pizza, Pasta, Steak or Pollo? <br />
                                 Whatever your favourite - we've got it!</p>
                             <div className="hero__buttons mt4 flex">
-                                <a href="tel:+47719225132"><button className="hero__btn btn-action uppercase">Phone Us</button></a>
-                                <button className="hero__btn--secondary uppercase">See Menu</button>
+                                <a href="tel:++447788990011"><button className="uppercase">Phone Us</button></a>
+                                <a href="/menu"><button className="uppercase">See Menu</button></a>
                             </div>
                         </div>
                     </div>
