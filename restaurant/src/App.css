@@ -965,15 +965,75 @@ header {
 }
 
 /******************************/
+/***   Address Homescreen    ***/
+/******************************/
+.Address {
+  position: relative;
+}
+
+.Address__vector {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: -20%;
+  width: 80%;
+  transform: rotate(180deg);
+}
+
+.Address__img {
+  border: 10px solid white;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+}
+
+.Address__img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.Address__grid {
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Address .fa-diamond {
+  color: var(--clr-accent-red-hover);
+  padding-left: 0.8rem;
+}
+
+.Address .text-desc {
+  line-height: 1.6;
+}
+
+@media (min-width: 901px) {
+  .Address__grid {
+    flex-direction: row;
+  }
+
+  .Address__img {
+    border: 10px solid white;
+    width: 60%;
+    height: 600px;
+    overflow: hidden;
+  }
+
+}
+
+/******************************/
 /***   Place Order Steps    ***/
 /******************************/
 .place-order {
   color: white;
   padding-block: 6rem;
-  background: var(--clr-blanchedalmond);
+  background: var(--linear-red);
 }
 
 .place-order__grid {
+  display: grid;
   grid-template-columns: 1fr 0.5fr 1fr 0.5fr 1fr;
 }
 
@@ -983,14 +1043,37 @@ header {
 
 
 .place-order__icon {
-  font-size: 5rem;
+  font-size: 4rem;
   margin-bottom: 2rem;
   color: var(--clr-dark);
   text-align: center;
 }
 
-.place-order__arrow {
+.place-order__arrow--right,
+.place-order__arrow--down {
   font-size: 4rem;
+}
+
+.place-order__arrow--down {
+  display: none;
+  font-size: 3.5rem;
+}
+
+@media (max-width: 700px) {
+  .place-order__grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .place-order__arrow--right {
+    display: none;
+  }
+
+  .place-order__arrow--down {
+
+    margin: 1rem auto;
+    display: block;
+  }
 }
 
 .placeOrderAnimation {
@@ -1192,9 +1275,8 @@ header {
 /**************************/
 footer {
   color: white;
-  margin-top: 5rem;
   background: var(--linear-dark);
-  padding-block: 2rem;
+  padding-block: 5rem;
 }
 
 .footer__wrapper {
@@ -1232,6 +1314,13 @@ footer {
   border-bottom-left-radius: 0%;
   border-top-left-radius: 40%;
   border-bottom-right-radius: 40%;
+}
+
+.footer__book {
+  color: var(--clr-accent);
+  font-weight: bold;
+  letter-spacing: 0.5ch;
+  font-size: 120%;
 }
 
 /**************************/

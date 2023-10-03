@@ -5,6 +5,7 @@ import PopularDishes from '../PopularDishes';
 import PlaceOrderProcess from '../PlaceOrderProcess';
 import About from '../About';
 import Reviews from '../Reviews';
+import Address from '../Address';
 
 export default function Homescreen() {
 
@@ -36,6 +37,7 @@ export default function Homescreen() {
             <About />
             <Reviews />
             <PlaceOrderProcess />
+            <Address />
         </>
     )
 }

@@ -16,6 +16,13 @@ export default function Footer() {
         <footer className="footer">
             <div className="footer__wrapper margins">
                 <div className="footer__column flex-column">
+                    <div className="header__logo"> Italian <i className="fa-solid fa-utensils"></i><br />Restaurant</div>
+                    <p className="mt2">The most delicious flavours that Italian Cuisine has to offer!
+                        Have a glass of splendid Sicilian wine and feel like you're there.<br />
+                        Order your favourite dishes for collection or delivery.</p>
+
+                </div>
+                <div className="footer__column flex-column">
                     <h3 className="mb1 uppercase">Navigation</h3>
                     <a href="" className=" link--white">Home</a>
                     <a href="" className=" link--white">Menu</a>
@@ -29,6 +36,9 @@ export default function Footer() {
 
                     <h3 className="mb1 uppercase">Social Media</h3>
                     <SocialMediaIcons />
+
+                    <h3 className="mt2 mb1 uppercase">Book a Table</h3>
+                    <a href="tel:+447788990011" className="footer__book">07788990011</a>
                 </div>
                 <div className="footer__column flex-column">
                     <h3 className="mb1 uppercase">User Panel</h3>
@@ -38,8 +48,9 @@ export default function Footer() {
                     {currentUser && <a className=" link--white" onClick={() => { dispatch(logoutUser()) }}>Log out</a>}
                 </div>
             </div>
+            <hr style={{ width: "90%", margin: "2rem auto" }} />
             <div className="center mt3">&copy; Italian Restaurant 2023 | Designed & Developed by <a href="https://lenaesposito.co.uk" className="uppercase link--white">Lena
                 Esposito</a></div>
-        </footer>
+        </footer >
     )
 }
