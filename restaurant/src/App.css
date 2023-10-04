@@ -1145,6 +1145,45 @@ header {
 }
 
 /*****************************/
+/***   Contact Screen         ***/
+/*****************************/
+.ContactScreen__wrapper {
+  position: relative;
+}
+
+.ContactScreen__vector {
+  position: absolute;
+  width: 90%;
+  transform: rotate(160deg);
+  z-index: -1;
+}
+
+.ContactScreen__contact {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  place-items: center;
+  gap: 2rem;
+}
+
+.ContactScreen__grid--item {
+  display: grid;
+  place-items: center;
+  background: var(--clr-white);
+  border: 1px solid var(--clr-accent-red);
+  padding: 1.2rem;
+  height: 100%;
+  width: 100%;
+}
+
+.ContactScreen__grid--item:hover {
+  box-shadow: 0px 0px 15px 0px var(--clr-accent-red-hover);
+}
+
+.ContactScreen__grid--item i {
+  font-size: 3.5rem;
+  color: var(--clr-accent-red);
+}
+
+/*****************************/
 /***   AboutScreen         ***/
 /*****************************/
 .AboutScreen__wrapper {
@@ -1396,22 +1435,30 @@ footer {
 /**************************/
 
 .register__form input,
-.login__form input {
-
+.login__form input,
+.ContactForm input,
+.ContactForm textarea {
+  background: var(--clr-white);
   width: 100%;
   border: 1px solid grey;
   padding: 0.5rem;
   margin-bottom: 0.5rem;
 }
 
+.ContactForm textarea {
+  height: 200px;
+}
+
 .register__form button,
-.login__form button {
+.login__form button,
+.ContactForm button {
   align-self: flex-end;
 }
 
 
 .register__form,
-.login__form {
+.login__form,
+.ContactForm {
   width: min(100%, 500px);
 }
 

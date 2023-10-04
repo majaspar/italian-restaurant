@@ -10,6 +10,7 @@ import OrdersScreen from './screens/OrdersScreen';
 import AdminScreen from './screens/AdminScreen';
 import GalleryScreen from './screens/GalleryScreen';
 import ContactScreen from './screens/ContactScreen';
+import ThanksScreen from './screens/ThanksScreen';
 import AboutScreen from './screens/AboutScreen';
 
 // Admin
@@ -34,6 +35,7 @@ function App() {
           <Route path="/login" element={<LoginScreen />} />
           <Route path="/register" element={<RegisterScreen />} />
           <Route path="/orders" element={<OrdersScreen />} />
+          <Route path="/thanks" element={<ThanksScreen />} />
 
           <Route path="/admin" element={<AdminScreen />} />
           <Route path="/admin/userslist" element={<UsersList />} />
