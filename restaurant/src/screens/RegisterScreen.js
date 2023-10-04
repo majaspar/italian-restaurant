@@ -43,7 +43,7 @@ export default function RegisterScreen() {
         <Navbar />
         <PageTitle content="Register" />
       </div>
-      <div className="mt7 margins">
+      <div className="mt3 mb5 margins">
 
         {loading && (<Loading />)}
         {success && (<Success message="User registered successfully." />)}
@@ -53,20 +53,20 @@ export default function RegisterScreen() {
         <div className="register__form flex-column">
           <h1 className="mt2 mb2">Register form</h1>
           <div className="form__labelled-item">
-            <label className="form__label" for="name">Name: </label>
+            <label className="form__label" htmlFor="name">Name: </label>
             <input type="text" id="name" placeholder="Your name" value={name} onChange={(e) => setName(e.target.value)}></input>
           </div>
           <div className="form__labelled-item">
-            <label className="form__label" for="email">Email: </label>
+            <label className="form__label" htmlFor="email">Email: </label>
             <input type="email" id="email" placeholder="Your email" value={email} onChange={(e) => setEmail(e.target.value)}></input>
           </div>
           <div className="form__labelled-item">
-            <label className="form__label" for="password">Password: </label>
+            <label className="form__label" htmlFor="password">Password: </label>
             <input type="password" id="password" placeholder="Enter password"
               maxLength={15} value={password} onChange={(e) => setPassword(e.target.value)}></input>
           </div>
           <div className="form__labelled-item">
-            <label className="form__label" for="repassword">Re-enter password: </label>
+            <label className="form__label" htmlFor="repassword">Re-enter password: </label>
             <input type="password" id="repassword" placeholder="Re-enter password"
               value={rePassword} onChange={(e) => setRePassword(e.target.value)}></input>
           </div>
@@ -74,7 +74,7 @@ export default function RegisterScreen() {
           <button onClick={register} className="mt1">Register</button>
         </div>
 
-        <div className="mt5">Already have an account? <a href="/login">Log in here.</a></div>
+        <div className="mt5">Already have an account? <a style={{ color: "var(--clr-accent-red)", fontWeight: "bold" }} href="/login">Log in here.</a></div>
       </div>
     </>
   )

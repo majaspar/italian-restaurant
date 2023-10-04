@@ -306,7 +306,7 @@ button {
   background: linear-gradient(#ffe695, var(--clr-accent));
   border-radius: 8px;
   cursor: pointer;
-  box-shadow: 10px 15px 35px -24px rgba(0, 0, 0, 0.75);
+  box-shadow: 1px 1px 15px 0px rgba(175, 167, 167, 0.651);
 }
 
 button:hover {
@@ -764,6 +764,19 @@ header {
 
 .menu__grid--item:hover {
   background-color: var(--clr-table-border-gray);
+  border-radius: 5px;
+}
+
+.addToCartButton {
+  position: relative;
+}
+
+.addToCartButton__success {
+  display: none;
+  position: absolute;
+  width: 200px;
+  top: -100%;
+  right: 120%;
 }
 
 .menu__icon {

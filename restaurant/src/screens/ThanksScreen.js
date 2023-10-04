@@ -10,9 +10,9 @@ export default function ThanksScreen() {
                 <PageTitle content="Thank you" />
             </div>
             <div className="margins mt7 mb7">
-                Thank you for submitting the contact form. We will get back to you as soon as possible.
+                <h2>Thank you for submitting the contact form. We will get back to you shortly.</h2>
                 <br />
-                <a href="/contact">Go back</a>
+                <a href="/contact"><div className="mt3">&larr; Go back</div></a>
             </div>
         </>
     )

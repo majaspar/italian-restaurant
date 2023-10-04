@@ -1,11 +1,10 @@
 import React from 'react'
-import Star from './Star'
 
-export default function ReviewItem({ reviewer, rating, avatar, review }) {
+export default function ReviewItem({ key, reviewer, rating, avatar, review }) {
 
 
     return (
-        <div className="reviews__grid--item shadow-dark">
+        <div key={key} className="reviews__grid--item shadow-dark">
             <div className="reviews__name-wrapper flex mb1">
                 <div>
                     <h3 className="reviews__name">{reviewer}</h3>

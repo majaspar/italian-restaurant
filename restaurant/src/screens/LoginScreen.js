@@ -37,7 +37,7 @@ export default function LoginScreen() {
         <Navbar />
         <PageTitle content="Log in" />
       </div>
-      <div className="mt3 margins">
+      <div className="mb5 mt3 margins">
 
         <h1 className="mt2 mb2">Login</h1>
 
@@ -46,7 +46,7 @@ export default function LoginScreen() {
 
         <div className="login__form mb2 flex-column">
           <div className="form__labelled-item">
-            <label className="form__label" for="email">Email:</label>
+            <label className="form__label" htmlFor="email">Email:</label>
             <input
               type="email"
               name="email"
@@ -56,7 +56,7 @@ export default function LoginScreen() {
               placeholder="Your email"></input>
           </div>
           <div className="form__labelled-item">
-            <label className="form__label" for="email">Password: </label>
+            <label className="form__label" htmlFor="email">Password: </label>
             <input
               type="password"
               name="password"
@@ -69,7 +69,7 @@ export default function LoginScreen() {
           </div>
           <button onClick={login}>Log in</button>
         </div>
-        <div> Don't have an account yet? Click <a href="/register">here to register</a> .</div>
+        <div > Don't have an account yet? Click <a style={{ color: "var(--clr-accent-red)", fontWeight: "bold" }} href="/register">here to register</a> .</div>
 
 
       </div>

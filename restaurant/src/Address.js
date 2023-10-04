@@ -11,17 +11,17 @@ export default function Address() {
             <div className="Address__grid center flex">
                 <div>
                     <h2 className="section-title">Italian Restaurant</h2>
-                    <p className="mt2 mb2"><i class="fa-solid fa-diamond"></i>
-                        <i class="fa-solid fa-diamond"></i>
-                        <i class="fa-solid fa-diamond"></i></p>
+                    <p className="mt2 mb2"><i className="fa-solid fa-diamond"></i>
+                        <i className="fa-solid fa-diamond"></i>
+                        <i className="fa-solid fa-diamond"></i></p>
                     <p className="text-desc">Bond Street<br /> Broadmead<br /> BRISTOL<br /> BS1 3BD</p>
-                    <p className="mt2 mb2 center"><i class="fa-solid fa-diamond"></i>
-                        <i class="fa-solid fa-diamond"></i>
-                        <i class="fa-solid fa-diamond"></i></p>
-                    <p className="text-desc"><i class="fa-solid fa-phone"></i>  0 7788 990 011</p>
-                    <p className="mt2 mb2 center"><i class="fa-solid fa-diamond"></i>
-                        <i class="fa-solid fa-diamond"></i>
-                        <i class="fa-solid fa-diamond"></i></p>
+                    <p className="mt2 mb2 center"><i className="fa-solid fa-diamond"></i>
+                        <i className="fa-solid fa-diamond"></i>
+                        <i className="fa-solid fa-diamond"></i></p>
+                    <p className="text-desc"><i className="fa-solid fa-phone"></i>  0 7788 990 011</p>
+                    <p className="mt2 mb2 center"><i className="fa-solid fa-diamond"></i>
+                        <i className="fa-solid fa-diamond"></i>
+                        <i className="fa-solid fa-diamond"></i></p>
                     <div className="mb2" style={{ marginInline: "25%" }}><SocialMediaIcons /></div>
                 </div>
                 <div className="Address__img shadow-dark" >

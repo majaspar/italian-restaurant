@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { roundPrice } from "./utils";
 import { useSelector, useDispatch } from 'react-redux'
 import { addToCart } from "./actions/cartActions";
+import Success from './Success'
 
 export default function MenuGridItem({ dish }) {
     const [qty, setQty] = useState(1)
@@ -20,11 +21,11 @@ export default function MenuGridItem({ dish }) {
 
     function addtocart() {
         dispatch(addToCart(dish, qty))
-
     }
 
     return (
         <div className="menu__grid--item grid mb1">
+
             <div>
                 <h3 className="">{dish.name}
                     {dish.isVegetarian && <i className="menu_icon-vegetarian fa-solid fa-leaf"></i>}
@@ -42,7 +43,9 @@ export default function MenuGridItem({ dish }) {
                     className="menu__icon fa-solid fa-circle-plus"></i>
             </div>
             <div>Price: £{roundPrice(dish.price, qty)}</div>
-            <button className="menu__btn--add" onClick={addtocart}>Add</button>
+            <div className="addToCartButton">
+                <div className="addToCartButton__success"><Success message="Added to cart!" /></div>
+                <button className="menu__btn--add" onClick={addtocart}>Add</button></div>
         </div>
     )
 }
