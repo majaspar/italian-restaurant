@@ -75,7 +75,7 @@ export default function GalleryScreen() {
                 <PageTitle content="Gallery" />
             </div>
             <div className={model ? "model open" : "model"}>
-                <img src={tempImgSrc} />
+                <img src={tempImgSrc} alt="inside of the restaurant" />
                 <CloseIcon onClick={() => setModel(false)} />
             </div>
             <div className="Gallery mt1">
@@ -83,7 +83,7 @@ export default function GalleryScreen() {
                 {data.map((item, index) => {
                     return (
                         <div className="Gallery__images" key={index} onClick={() => getImage(item.imgSrc)}>
-                            <img className="Gallery__img" src={item.imgSrc} />
+                            <img className="Gallery__img" src={item.imgSrc} alt="inside of the restaurant" />
                         </div>
                     )
                 })}

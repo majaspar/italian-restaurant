@@ -63,7 +63,7 @@ export default function CartScreen() {
                         </div>
                         <hr className="accent mb2" />
                         <h2>Total:</h2>
-                        <hr className="mb2" style={{ color: "black" }} />
+                        <hr className="mb2" />
                         <div style={{ textAlign: "right" }}>
                             <div className="basket__total">£{total}</div>
                             <Checkout total={total} />

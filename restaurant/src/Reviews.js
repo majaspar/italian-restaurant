@@ -19,7 +19,7 @@ export default function Reviews() {
   return (
     <section className="reviews margins mb7">
       <h2 className="section-title center mb5">Read Our Reviews</h2>
-      <img className="Reviews__vector-1" src={vector1} />
+      <img className="Reviews__vector-1" src={vector1} alt="S-shaped line for decorating background" />
       <div className="reviews__grid grid">
 
         <ReviewItem reviewer="Nikki Chapman" rating={star4} avatar={placeholder} review="These guys are great! I had an amazing pizza last time I was there. All products top quality. It's a bit far from the city centre, though..." />

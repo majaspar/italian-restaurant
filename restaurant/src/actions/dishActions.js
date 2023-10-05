@@ -58,6 +58,8 @@ export const addDish = (dish) => async dispatch => {
         const response = await axios.post('/api/dishes/adddish', { dish })
         console.log(response);
         dispatch({ type: 'ADD_DISH_SUCCESS' })
+        setTimeout(function () { window.location.href = '/admin/disheslist' }, 5000);
+
     } catch (error) {
         dispatch({ type: 'ADD_DISH_FAILED', payload: error })
     }

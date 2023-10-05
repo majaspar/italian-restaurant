@@ -16,8 +16,8 @@ export default function AboutScreen() {
             <div className="AboutScreen__wrapper margins mt3 mb7">
                 <h2 className="section-title mb2">Tradition is what defines us</h2>
                 <figure>
-                    <img className="AboutScreen__img" src={img1} /></figure>
-                <img className="AboutScreen__vector" src={vector} />
+                    <img className="AboutScreen__img" src={img1} alt="inside of the restaurant" /></figure>
+                <img className="AboutScreen__vector" src={vector} alt="S-shaped line for decorating background" />
                 <h3 className="mb2 ff-kaushan">Simplicity</h3>
                 <div>
 
@@ -26,7 +26,7 @@ export default function AboutScreen() {
                     </p>
                     <hr className="mt2 mb2" />
 
-                    <img className="AboutScreen__img1" src={img2} />
+                    <img className="AboutScreen__img1" src={img2} alt="inside of the restaurant" />
                     <h3 className="mt2 mb2 ff-kaushan">It's All About Ingredients</h3>
                     <p className="text-desc mb2">
                         Cheese, cold cuts and wine are central to Italian cuisine, and along with pizza and coffee (especially espresso) form part of Italian gastronomic culture.

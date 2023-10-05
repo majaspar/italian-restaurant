@@ -24,12 +24,12 @@ export default function Footer() {
                 </div>
                 <div className="footer__column flex-column">
                     <h3 className="mb1 uppercase">Navigation</h3>
-                    <a href="" className=" link--white">Home</a>
-                    <a href="" className=" link--white">Menu</a>
-                    <a href="" className=" link--white">Gallery</a>
-                    <a href="" className=" link--white">About</a>
-                    <a href="" className=" link--white">Contact</a>
-                    <a href="#" className=" link--white">Privacy Policy</a>
+                    <a href="/" className=" link--white">Home</a>
+                    <a href="/menu" className=" link--white">Menu</a>
+                    <a href="/gallery" className=" link--white">Gallery</a>
+                    <a href="/about" className=" link--white">About</a>
+                    <a href="/contact" className=" link--white">Contact</a>
+                    {/* <a href="#" className=" link--white">Privacy Policy</a> */}
 
                 </div>
                 <div className="footer__column flex-column">

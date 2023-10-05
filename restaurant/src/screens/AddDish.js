@@ -75,6 +75,7 @@ export default function AddDish() {
             <input
               required
               type="number"
+              step="0.01"
               min={0}
               id="price"
               placeholder="price"

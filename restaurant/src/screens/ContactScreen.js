@@ -35,7 +35,7 @@ export default function ContactScreen() {
                 <PageTitle content="Contact Us" />
             </div>
             <div className="mt3 ContactScreen__wrapper margins">
-                <img src={vector} className="ContactScreen__vector" />
+                <img src={vector} className="ContactScreen__vector" alt="S-shaped line for decorating background" />
                 <h2 className="section-title">Visit the restaurant, phone us, email...</h2>
                 <div className="ContactScreen__contact grid mb5">
 

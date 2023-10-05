@@ -14,9 +14,9 @@ export default function Welcome() {
         <section className="Welcome margins mt5 mb7">
             <div className="Welcome__wrapper flex">
                 <div className="Welcome__imgs">
-                    <img className="Welcome__vector-1" src={vector1} />
-                    <img className="Welcome__img-1 shadow-dark" src={img1} />
-                    <img className="Welcome__img-2 shadow" src={img2} />
+                    <img className="Welcome__vector-1" src={vector1} alt="S-shaped line for decorating background" />
+                    <img className="Welcome__img-1 shadow-dark" src={img1} alt="chef cooking" />
+                    <img className="Welcome__img-2 shadow" src={img2} alt="chef cooking" />
                 </div>
                 <div className="Welcome__text center">
 
@@ -28,7 +28,7 @@ export default function Welcome() {
                         <p className="text-desc mb2">Chefs with over 20 years of experience make sure that every dish is cooked to perfection. The public dining room that ultimately came to be known as the restaurant originated in France, and the French have continued to make major contributions to the restaurant's development.</p>
 
 
-                        <img className="Welcome__img-pizza" src={pizza} />
+                        <img className="Welcome__img-pizza" src={pizza} alt="floating and rotating pizza icon" />
 
                     </div>
                 </div>

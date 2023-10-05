@@ -12,6 +12,7 @@ const OrderSchema = new Schema({
     orderAmount: { type: Number, required: true },
     isCollected: { type: Boolean, default: false },
     isDelivered: { type: Boolean, default: false },
+    delivery: { type: Boolean, default: true }, // if true -> delivery, if false -> collection
     transactionId: { type: String, required: true },
     createdAt: { type: Date, default: Date.now }
 

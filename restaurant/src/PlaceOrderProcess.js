@@ -1,5 +1,4 @@
 
-import vector1 from './assets/vector1.svg';
 
 export default function Navbar() {
     return (
