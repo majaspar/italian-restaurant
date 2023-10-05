@@ -27,7 +27,7 @@ export default function OrdersList() {
         <Navbar />
         <PageTitle content="Admin: All Orders" />
       </div>
-      <div className="OrdersList margins">
+      <div className="OrdersList margins mb5">
         <AdminPages />
         <h1 className="mt3">Orders List</h1>
         {loading && (<Loading />)}

@@ -19,6 +19,22 @@ export default function MenuGridItem({ dish }) {
 
     const dispatch = useDispatch()
 
+    // const showSuccess = () => {
+    //     document.querySelector('.addToCartButton__success').style.display = "block"
+
+    // }
+    // const hideSuccess = () => {
+    //     document.querySelector('.addToCartButton__success').style.display = "none"
+    // }
+    // const hide = () => setTimeout(hideSuccess, 1000)
+    // const hideSuccessDiv = () => {
+    //     successDiv.style.display = "block";
+    //     successDiv.style.display = "none"
+    // }
+
+    // setTimeout(hideSuccessDiv, 1000)
+
+
     function addtocart() {
         dispatch(addToCart(dish, qty))
     }
@@ -43,9 +59,7 @@ export default function MenuGridItem({ dish }) {
                     className="menu__icon fa-solid fa-circle-plus"></i>
             </div>
             <div>Price: £{roundPrice(dish.price, qty)}</div>
-            <div className="addToCartButton">
-                <div className="addToCartButton__success"><Success message="Added to cart!" /></div>
-                <button className="menu__btn--add" onClick={addtocart}>Add</button></div>
-        </div>
+            <button className="menu__btn--add" onClick={addtocart}>Add</button>
+        </div >
     )
 }

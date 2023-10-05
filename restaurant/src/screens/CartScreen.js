@@ -61,9 +61,9 @@ export default function CartScreen() {
                                 <label htmlFor='delivery'>Delivery</label>
                             </div>
                         </div>
-                        <hr className="mb2" />
+                        <hr className="accent mb2" />
                         <h2>Total:</h2>
-                        <hr className="mb2" />
+                        <hr className="mb2" style={{ color: "black" }} />
                         <div style={{ textAlign: "right" }}>
                             <div className="basket__total">£{total}</div>
                             <Checkout total={total} />

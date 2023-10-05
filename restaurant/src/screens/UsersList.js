@@ -30,7 +30,7 @@ export default function UsersList() {
                 <Navbar />
                 <PageTitle content="Admin: Users" />
             </div>
-            <div className="UsersList margins">
+            <div className="UsersList margins  mb5">
                 <AdminPages />
                 <h1 className="mt3 mb3">Users list</h1>
                 {loading && <Loading />}

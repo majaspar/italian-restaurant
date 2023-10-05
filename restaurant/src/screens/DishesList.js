@@ -32,7 +32,7 @@ export default function DishesList() {
         <Navbar />
         <PageTitle content="Admin: Menu Items" />
       </div>
-      <div className="DishesList margins">
+      <div className="DishesList margins mb5">
         <AdminPages />
         <h1 className="mt3">Dishes List</h1>
         {loading && (<Loading />)}

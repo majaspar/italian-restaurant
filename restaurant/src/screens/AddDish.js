@@ -46,7 +46,7 @@ export default function AddDish() {
         <Navbar />
         <PageTitle content="Admin: Add Item" />
       </div>
-      <div className="margins">
+      <div className="margins  mb5">
         <AdminPages />
         <h1 className="mt3">Add Dish</h1>
 

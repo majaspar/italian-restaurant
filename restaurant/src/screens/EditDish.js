@@ -69,11 +69,11 @@ export default function EditDish({ match }) {
 
   return (
     <>
-      <div className="header-and-hero ContactScreen">
+      <div className="header-and-hero ContactScreen ">
         <Navbar />
         <PageTitle content="Admin: Edit Item" />
       </div>
-      <div className="margins mt7">
+      <div className="margins mt7  mb5">
         <AdminPages />
         <h1 className="mt3">Edit Dish</h1>
         {loading && <Loading />}

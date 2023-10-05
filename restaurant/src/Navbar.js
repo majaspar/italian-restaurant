@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { logoutUser } from "./actions/userActions";
 import SocialMediaIcons from './SocialMediaIcons';
-import './Navbar.css'
+import Success from "./Success";
 
 export default function Navbar() {
 
@@ -93,6 +93,9 @@ export default function Navbar() {
           </div></a>
         </div>
 
+      </div>
+      <div className="success__msg--wrapper">
+        <div id="success__msg" className="success__msg"><Success message="Added to cart!" /></div>
       </div>
     </header>
   )

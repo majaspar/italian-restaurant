@@ -23,7 +23,7 @@ export default function AdminScreen() {
         <Navbar />
         <PageTitle content="Admin" />
       </div>
-      <div className="margins AdminScreen">
+      <div className="margins AdminScreen mb2">
         <h1 className="mt2 mb3">Admin Panel</h1>
 
         <AdminPages />

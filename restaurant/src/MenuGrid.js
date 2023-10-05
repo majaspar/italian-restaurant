@@ -22,7 +22,7 @@ export default function MenuGrid({ menuSectionTitle, menuCategory }) {
 
     return (
         <div className="menu__grid">
-
+            <Loading />
             <h2 className="menu__title center section-title mt3">{menuSectionTitle}</h2>
             {loading ? (<Loading />) : error ? (<Error message="There's been an error while loading the menu." />) : (
                 dishes.map((dish) => {

@@ -7,7 +7,7 @@
 
 .AdminScreen__list li {
 
-    background: var(--clr-blanchedalmond);
+    background: var(--clr-white);
     border: 1px solid var(--clr-accent);
     padding: 0.5rem;
 }
@@ -69,7 +69,7 @@ thead {
 }
 
 tr:hover {
-    background: var(--clr-blanchedalmond);
+    background: var(--clr-gray-hover);
 }
 
 .AddDish__form,

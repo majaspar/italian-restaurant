@@ -12,7 +12,6 @@ export default function Menu() {
             <MenuGrid menuSectionTitle="Pizza" menuCategory="pizza" />
             <MenuGrid menuSectionTitle="Extra Toppings" menuCategory="topping" />
             <MenuGrid menuSectionTitle="Pasta" menuCategory="pasta" />
-            <MenuGrid menuSectionTitle="Pizza" menuCategory="pizza" />
             <MenuGrid menuSectionTitle="Main Event" menuCategory="main" />
             <MenuGrid menuSectionTitle="Sides" menuCategory="side" />
 
