@@ -1,7 +1,6 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { addToCart } from '../actions/cartActions';
-import { deleteFromCart } from '../actions/cartActions'
+import { addToCart, deleteFromCart } from '../actions/cartActions';
 import Checkout from '../Checkout'
 import Navbar from '../Navbar';
 import PageTitle from '../PageTitle';
@@ -14,8 +13,7 @@ export default function CartScreen() {
     const cartItems = cartstate.cartItems
     let total = cartItems.reduce((x, item) => x + (item.price * item.qty), 0).toFixed(2)
     const dispatch = useDispatch()
-
-    console.log(cartItems)
+    console.log(cartstate)
     return (
         <>
             <div className="header-and-hero CartScreen">
@@ -51,17 +49,6 @@ export default function CartScreen() {
                     </div>
 
                     <div className="basket__total--wrapper">
-                        <div className="basket__radio--buttons flex">
-                            <div>
-                                <input type="radio" name="collectionOrDelivery" id="collection" value="Collection" />
-                                <label htmlFor='collection'>Collection</label>
-                            </div>
-                            <div>
-                                <input type="radio" name="collectionOrDelivery" id="delivery" value="Delivery" />
-                                <label htmlFor='delivery'>Delivery</label>
-                            </div>
-                        </div>
-                        <hr className="accent mb2" />
                         <h2>Total:</h2>
                         <hr className="mb2" />
                         <div style={{ textAlign: "right" }}>

@@ -4,7 +4,7 @@ import './Loader.css'
 export default function Loading() {
     return (
 
-        <div class="loadingspinner mt2 mb2 ">
+        <div className="loadingspinner mt2 mb2 ">
             <div id="square1"></div>
             <div id="square2"></div>
             <div id="square3"></div>

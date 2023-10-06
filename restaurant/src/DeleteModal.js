@@ -9,17 +9,13 @@ export default function DeleteModal({ del, itemToDelete = "item" }) {
 
     return (
         <>
-
             <i id="DeleteModal" className=' fa fa-trash m-1' onClick={handleOpen}></i>
-
-
 
             <Modal
                 open={open}
                 onClose={handleClose}
                 aria-labelledby="modal-modal-title"
                 aria-describedby="modal-modal-description">
-
 
                 <div className="deleteModalWindow">
                     <div className="deleteModalBox">

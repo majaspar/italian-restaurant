@@ -41,6 +41,7 @@ export default function OrdersList() {
                 <th>IDs</th>
                 <th>Email</th>
                 <th>Name</th>
+                <th>Col/Del</th>
                 <th>Amount</th>
                 <th>Date</th>
                 <th>Status</th>
@@ -56,10 +57,15 @@ export default function OrdersList() {
                         User ID: {order.userId}</td>
                       <td>{order.email}</td>
                       <td>{order.name}</td>
+                      <td>{order.delivery ? "Delivery" : "Collection"}</td>
                       <td className="center">£{(order.orderAmount).toFixed(2)}</td>
                       <td>{order.createdAt.substring(0, 10)}</td>
                       <td className="center">
-                        {(!order.isCollected && !order.isDelivered) && <div className="OrdersList__status flex"><button className="btn OrdersList__collected" onClick={() => { dispatch(collectOrder(order._id)) }}>Mark as Collected</button><button className="btn OrdersList__delivered" onClick={() => { dispatch(deliverOrder(order._id)) }}>Mark as Delivered</button></div>}
+                        {(!order.isCollected && !order.isDelivered) && <div className="OrdersList__status flex">
+                          <button className="btn OrdersList__collected"
+                            onClick={() => { dispatch(collectOrder(order._id)) }}>Mark as Collected</button>
+                          <button className="btn OrdersList__delivered"
+                            onClick={() => { dispatch(deliverOrder(order._id)) }}>Mark as Delivered</button></div>}
 
 
                         {order.isCollected && <span className="">Collected <i className="fa-solid fa-circle-check"></i></span>}

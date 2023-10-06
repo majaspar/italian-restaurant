@@ -95,7 +95,7 @@ export default function Navbar() {
 
       </div>
       <div className="success__msg--wrapper">
-        <div id="success__msg" className="success__msg"><Success message="Added to cart!" /></div>
+        <div id="success__msg" className="success__msg"><Success message="Basket updated!" /></div>
       </div>
     </header>
   )

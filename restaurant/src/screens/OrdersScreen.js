@@ -39,9 +39,9 @@ export default function OrdersScreen() {
 
                     return (
 
-                        <div className="OrdersScreen">
+                        <div key={order._id} className="OrdersScreen">
 
-                            <div>Order date: {order.createdAt.substring(0, 10)}
+                            <div>{order.delivery ? "Delivery" : "Collection"} order date: {order.createdAt.substring(0, 10)}
                                 <span onClick={showOrderDetails} className="order__details uppercase">(Details)</span>
                                 <p className="order__number mt1">Order number: {order._id}<br />
                                     Transaction id: {order.transactionId}</p>
@@ -52,16 +52,16 @@ export default function OrdersScreen() {
                             <ol>
                                 {order.items.map(item => {
                                     return (
-                                        <li>
-                                            <p>{item.name} * {item.qty} = £{(item.price.toFixed(2))}</p>
+                                        <li key={item._id}>
+                                            <p>{item.name}, £{(item.price.toFixed(2))} * {item.qty} </p>
                                         </li>
                                     )
                                 })}
                             </ol>
-                            <p>{(order.isCollected === false && order.isDelivered === false) && <h3>Pending...</h3>}</p>
-                            <p>{order.isDelivered && <div><h3>Delivered <i className="fa-solid fa-circle-check"></i></h3>
-                                <p className="mt1">Delivery address: {order.address.street}, {order.address.postcode}, {order.address.city}. </p></div>}</p>
-                            <p>{order.isCollected && <h3>Collected <i className="fa-solid fa-circle-check"></i></h3>}</p>
+                            <div>{(order.isCollected === false && order.isDelivered === false) && <h3 className="placeOrderAnimation">Order status pending...</h3>}</div>
+                            <div>{order.isDelivered && <div><h3>Delivered <i className="fa-solid fa-circle-check"></i></h3>
+                                <p className="mt1">Delivery address: {order.address.street}, {order.address.postcode}, {order.address.city}. </p></div>}</div>
+                            <div>{order.isCollected && <h3>Collected <i className="fa-solid fa-circle-check"></i></h3>}</div>
                             <p className="" style={{ textAlign: "right" }}>Order total: £{(order.orderAmount).toFixed(2)}</p>
                             <p></p>
                             <hr />

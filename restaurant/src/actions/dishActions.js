@@ -41,8 +41,8 @@ export const filterDishes = (searchkey, category) => async dispatch => {
         const response = await axios.get('/api/dishes/getalldishes')
         filteredDishes = response.data.filter(dish => dish.name.toLowerCase().includes(searchkey))
 
-        if (category != 'all') {
-            filteredDishes = response.data.filter(dish => dish.category.toLowerCase() == category)
+        if (category !== 'all') {
+            filteredDishes = response.data.filter(dish => dish.category.toLowerCase() === category)
 
         }
         dispatch({ type: 'GET_DISHES_SUCCESS', payload: filteredDishes })
@@ -58,7 +58,7 @@ export const addDish = (dish) => async dispatch => {
         const response = await axios.post('/api/dishes/adddish', { dish })
         console.log(response);
         dispatch({ type: 'ADD_DISH_SUCCESS' })
-        setTimeout(function () { window.location.href = '/admin/disheslist' }, 5000);
+        setTimeout(function () { window.location.href = '/admin/disheslist' }, 2000);
 
     } catch (error) {
         dispatch({ type: 'ADD_DISH_FAILED', payload: error })

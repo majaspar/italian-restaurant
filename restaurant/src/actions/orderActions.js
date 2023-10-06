@@ -6,10 +6,11 @@ export const placeOrder = (token, total) => async (dispatch, getState) => {
 
     const currentUser = getState().loginUserReducer.currentUser
     const cartItems = getState().cartReducer.cartItems
+    const delivery = getState().placeOrderReducer.delivery
 
     try {
 
-        const response = await axios.post('/api/orders/placeorder', { token, total, currentUser, cartItems })
+        const response = await axios.post('/api/orders/placeorder', { token, total, currentUser, cartItems, delivery })
         dispatch({ type: 'PLACE_ORDER_SUCCESS' })
         localStorage.removeItem('cartItems')
         window.location.href = '/orders'

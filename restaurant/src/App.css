@@ -1407,7 +1407,7 @@ header {
 }
 
 .basket__total--wrapper {
-  align-self: end;
+  align-self: start;
   min-width: 300px;
   border: 2px solid var(--clr-accent);
   padding: 1rem;

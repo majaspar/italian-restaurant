@@ -1,7 +1,7 @@
 
 import MenuGridItem from './MenuGridItem';
 
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getAllDishes } from './actions/dishActions';
 import Loading from './Loading'
@@ -22,12 +22,11 @@ export default function MenuGrid({ menuSectionTitle, menuCategory }) {
 
     return (
         <div className="menu__grid">
-            <Loading />
             <h2 className="menu__title center section-title mt3">{menuSectionTitle}</h2>
             {loading ? (<Loading />) : error ? (<Error message="There's been an error while loading the menu." />) : (
                 dishes.map((dish) => {
 
-                    if (dish.category == menuCategory) {
+                    if (dish.category === menuCategory) {
                         return (
                             <MenuGridItem key={dish._id} dish={dish} />
                         )
