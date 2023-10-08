@@ -18,7 +18,7 @@ export default function MenuGrid({ menuSectionTitle, menuCategory }) {
 
     useEffect(() => {
         dispatch(getAllDishes())
-    })
+    }, [])
 
     return (
         <div className="menu__grid">

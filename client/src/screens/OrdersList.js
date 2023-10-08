@@ -18,7 +18,7 @@ export default function OrdersList() {
   const { loading, error, orders } = getOrdersState;
   useEffect(() => {
     dispatch(getAllOrders());
-  }, [dispatch]);
+  }, []);
 
 
   return (

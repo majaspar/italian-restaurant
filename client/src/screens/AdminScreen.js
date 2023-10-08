@@ -15,7 +15,7 @@ export default function AdminScreen() {
     if (!currentUser.isAdmin) {
       window.location.href = "/";
     }
-  });
+  }, []);
 
   return (
     <>

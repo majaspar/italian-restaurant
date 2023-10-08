@@ -22,7 +22,7 @@ export default function UsersList() {
 
         dispatch(getAllUsers())
 
-    }, [dispatch])
+    }, [])
 
     return (
         <>

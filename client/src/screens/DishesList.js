@@ -21,7 +21,7 @@ export default function DishesList() {
 
   useEffect(() => {
     dispatch(getAllDishes());
-  }, [dispatch]);
+  }, []);
 
 
 

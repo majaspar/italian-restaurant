@@ -45,7 +45,7 @@ export default function EditDish({ match }) {
       dispatch(getDishById(match.params.dishId));
     }
 
-  }, [dish, match.params.dishId, dispatch]);
+  }, [dish, dispatch]);
 
 
 
