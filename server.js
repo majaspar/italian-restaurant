@@ -28,11 +28,6 @@ if (process.env.NODE_ENV === 'production') {
     })
 }
 
-// app.use(function (req, res, next) {
-//     res.header("Access-Control-Allow-Origin", "https://italianrestaurant.onrender.com/");
-//     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-//     next();
-// });
 
 app.get('/', (req, res) => {
     res.send("Server working🔥 on port " + port)

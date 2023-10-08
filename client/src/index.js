@@ -5,10 +5,10 @@ import { Provider } from 'react-redux';
 import store from './store';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { disableReactDevTools } from '@fvilers/disable-react-devtools'
+// import { disableReactDevTools } from '@fvilers/disable-react-devtools'
 
 //it will disable react dev tools in the production after deployment
-if (process.env.NODE_ENV === 'production') disableReactDevTools();
+// if (process.env.NODE_ENV === 'production') disableReactDevTools();
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
