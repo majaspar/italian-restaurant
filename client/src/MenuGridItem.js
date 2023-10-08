@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { roundPrice } from "./utils";
-import { useSelector, useDispatch } from 'react-redux'
+import { useDispatch } from 'react-redux'
 import { addToCart } from "./actions/cartActions";
-import Success from './Success'
+//import Success from './Success'
 
 export default function MenuGridItem({ dish }) {
     const [qty, setQty] = useState(1)

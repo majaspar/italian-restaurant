@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
 import './AdminScreen.css'
 import AdminPages from '../AdminPages'
 import Navbar from "../Navbar";
@@ -9,13 +9,13 @@ export default function AdminScreen() {
 
   const userState = useSelector((state) => state.loginUserReducer);
   const { currentUser } = userState;
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
 
   useEffect(() => {
     if (!currentUser.isAdmin) {
       window.location.href = "/";
     }
-  }, []);
+  });
 
   return (
     <>

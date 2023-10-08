@@ -1,4 +1,4 @@
-import { deleteFromCart } from "../actions/cartActions"
+//import { deleteFromCart } from "../actions/cartActions"
 
 export const cartReducer = (state = { cartItems: [] }, action) => {
     switch (action.type) {

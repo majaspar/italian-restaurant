@@ -45,7 +45,7 @@ export default function Footer() {
                     {!currentUser && <a href="/login" className=" link--white">Login</a>}
                     {!currentUser && <a href="/register" className=" link--white">Register</a>}
                     {currentUser && <a href="/orders" className=" link--white">My Orders</a>}
-                    {currentUser && <a className=" link--white" onClick={() => { dispatch(logoutUser()) }}>Log out</a>}
+                    {currentUser && <div className=" link--white" onClick={() => { dispatch(logoutUser()) }}>Log out</div>}
                 </div>
             </div>
             <hr style={{ width: "90%", margin: "2rem auto" }} />
