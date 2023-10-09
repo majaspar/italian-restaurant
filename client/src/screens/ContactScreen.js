@@ -88,7 +88,7 @@ export default function ContactScreen() {
                         <label className="form__label" htmlFor="name">Message: </label>
                         <textarea className="form__textarea" placeholder='How can we help you?' name="message" required />
                     </div>
-                    <input type="hidden" name="_next" value="http://localhost:3000/thanks" />
+                    <input type="hidden" name="_next" value="https://italianrestaurant.onrender.com/thanks" />
                     <input type="hidden" name="_captcha" value="false" />
                     <input type="hidden" name="_template" value="table" />
                     <input type="hidden" name="_subject" value="Contact from Italian Restaurant" />
