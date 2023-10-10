@@ -13,7 +13,7 @@ const port = process.env.PORT || 5000;
 
 app.use(express.json());
 app.use(cors({
-    origin: ["http://localhost:3000"],  //"https://restaurant-mqgk.onrender.com/"
+    origin: ["http://localhost:3000", "https://master--sweet-cendol-952b12.netlify.app/"],
     methods: ["POST", "GET"],
     credentials: true
 }))
