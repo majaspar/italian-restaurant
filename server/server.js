@@ -1,4 +1,5 @@
 const express = require('express');
+const router = express.Router();
 
 const dishRoute = require('./routes/dishRoute');
 const userRoute = require('./routes/userRoute');
@@ -10,7 +11,6 @@ const db = require("./db.js")
 const app = express();
 const port = process.env.PORT || 5000;
 
-
 app.use(express.json());
 app.use(cors({
     origin: ["http://localhost:3000", "https://master--sweet-cendol-952b12.netlify.app/"],
@@ -19,9 +19,12 @@ app.use(cors({
 }))
 
 
+
 app.use('/api/dishes/', dishRoute)               //if url is coming with 'api/dishes/' we navigate it to dishroute
 app.use('/api/users/', userRoute)
 app.use('/api/orders/', ordersRoute)
+
+
 
 // if (process.env.NODE_ENV === 'production') {
 

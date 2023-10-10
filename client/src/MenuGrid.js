@@ -1,6 +1,6 @@
 
 import MenuGridItem from './MenuGridItem';
-
+import axios from 'axios';
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getAllDishes } from './actions/dishActions';
@@ -9,6 +9,17 @@ import Error from './Error'
 
 
 export default function MenuGrid({ menuSectionTitle, menuCategory }) {
+    // const fetchData = async () => {
+    //     const data = await axios.get('https://italian-restaurant-server.onrender.com/api/dishes/getalldishes')
+    //     console.log(data)
+    // }
+
+    // useEffect(() => {
+    //     return () => {
+    //         fetchData();
+    //     }
+    // }, [])
+
 
     const dispatch = useDispatch()
 
